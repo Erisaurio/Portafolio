@@ -1,0 +1,5 @@
+.lefh-side{
+    position: sticky;
+    top: calc(var(--header-offset, 15vh) + 2em);
+    margin-left: 20px;
+}
