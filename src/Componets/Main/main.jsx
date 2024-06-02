@@ -1,4 +1,4 @@
-import logo from '../../logo.svg';
+
 import '../Main/main.css';
 
 const rowstyle = {
@@ -9,13 +9,6 @@ const rowstyle = {
 const col2 = {
   backgroundColor: 'red',
   
-};
-
-const colfollow = {
- 
-  position: 'sticky',
-  top: 'calc(var(--header-offset, 40vh) + 2em)'
-
 };
 
 const colh1 = {
@@ -43,42 +36,48 @@ const Main = () => {
     
     <div className="col-12">
       <div className="row">
-        <div className="col-4" style={col2}>
-
-          <div id="list-example" class="list-group" style={colfollow}>
-            <a class="list-group-item list-group-item-action" href="#list-item-1">Eri Alejandro</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-2">Sobre Mi</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-3">Portafolio</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-4">Educacion</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-5">Competencias</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-6">Contacto</a>
+        <div className="col-4 " style={col2}>
+          
+          <div className="lefh-side">
+            <img className = "mb-3" src="https://i.pravatar.cc/250?u=mail@ashallendesign.co.uk"/>
+            <div id="list-example" className="list-group " >
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Eri Alejandro</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Sobre Mi</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Portafolio</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Educacion</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-5">Competencias</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-6">Contacto</a>
+            </div>
           </div>
-
+         
         </div>
         <div className="col-8" style={rowstyle}>
 
           <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
             
-              <div className="col d-flex align-items-center" style={colh1}>
+          <div id="list-item-1"></div>
+              <div className="WelcomePart align-items-center" style={colh1}>
 
-              <h1 id="list-item-1">Eri Alejandro</h1>
+           
                 <div className="row  justify-content-center" >
-                  <div className="col-10" style={{backgroundColor:'blue'}}>
+                  <div className="col-md-10 col-sm-8"  style={{backgroundColor:'blue'}}>
 
-                    <h3>BIENVENIDO A MI PORTAFOLIO</h3>
+                    <h1>BIENVENIDO A MI PORTAFOLIO</h1>
+                    <h2>Eri Alejandro</h2>
                     <p>Te Invito a Ponte en contacto conmigo escríbeme a</p><a>correo@h.com</a>
                   
-                    <button>Descarga mi CV</button>
-                    <i>in</i>
+                    <button>Descarga mi CV</button> <br />
+                    <i>in</i> <i>in</i> <i>in</i> <i>in</i>
                   </div>
                 </div>
                 
               </div>
 
-              <div className="col d-flex align-items-center" style={colh2}>
+              <div id="list-item-2"></div>
+              <div className="AboutMePart align-items-center" style={colh2}>
 
-              <h1 id="list-item-2">Sobre Mi</h1>
               
+              <h1 id="">Sobre Mi</h1>
                 <div className="row  justify-content-center" >
                   <div className="col-10" style={{backgroundColor:'blue'}}>
 
@@ -90,9 +89,10 @@ const Main = () => {
                 
               </div>
               
-              <div className="col d-flex align-items-center" style={colh3}>
+              <div id="list-item-3"></div>
+              <div className="PortafolioPart align-items-center" style={colh3}>
 
-                <h1 id="list-item-3">Portafolio</h1>
+                <h1 id="">Portafolio</h1>
                 <div className="row  justify-content-center" >
                   <div className="col-10" style={{backgroundColor:'blue'}}>
 
@@ -105,9 +105,10 @@ const Main = () => {
 
               </div>
 
-              <div className="col d-flex align-items-center" style={colh3}>
+              <div id="list-item-4"></div>
+              <div className="EducationPart align-items-center" style={colh3}>
 
-                <h1 id="list-item-4">Educacion</h1>
+                <h1 id="">Educacion</h1>
                 <div className="row  justify-content-center" >
                   <div className="col-10" style={{backgroundColor:'blue'}}>
 
@@ -119,9 +120,10 @@ const Main = () => {
 
               </div>
 
-              <div className="col d-flex align-items-center" style={colh4}>
+              <div id="list-item-5"></div>
+              <div className="SkillsPart Part d-flex align-items-center" style={colh4}>
 
-                <h1 id="list-item-5">Competencias</h1>
+                <h1 id="">Competencias</h1>
                 <div className="row  justify-content-center" >
                   <div className="col-10" style={{backgroundColor:'blue'}}>
 
@@ -134,9 +136,10 @@ const Main = () => {
 
               </div>
 
-              <div className="col d-flex align-items-center" style={colh4}>
+              <div id="list-item-6"></div>
+              <div className="ContactPart d-flex align-items-center" style={colh4}>
 
-                <h4 id="list-item-6">Contáctame</h4>
+                <h4 id="">Contáctame</h4>
                 <div className="row  justify-content-center" >
                   <div className="col-10" style={{backgroundColor:'blue'}}>
 
@@ -144,7 +147,7 @@ const Main = () => {
                     <p>Telefono</p>
                     <p>LinkedIn</p>
 
-                    <h3>ESTE SITIO ESTÁ DESSAROLLADO CON:</h3>
+                    <h4>ESTE SITIO ESTÁ DESSAROLLADO CON:</h4>
                     <p>html,css,javascpt,boostrap</p>
                   
                   </div>
@@ -161,52 +164,5 @@ const Main = () => {
    
   );
 }
-
- /*
-      <div className="col" style={colh1}>
-        <h4 id="list-item-1">Item 1</h4>
-        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-      </div>
-      
-      <div className="col" style={colh2}>
-        <h4 id="list-item-2">Item 2</h4>
-        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-      </div>
-
-      <div className="col" style={colh3}>
-        <h4 id="list-item-3">Item 3</h4>
-        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-      </div>
-
-      <div className="col" style={colh4}>
-        <h4 id="list-item-4">Item 4</h4>
-        <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-      </div>
-    */
-
-    /*
-    <div class="row" style={ rowstyle }>
-      <div class="col-4">
-        <div id="list-example" class="list-group">
-          <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-          <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-          <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-          <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-        </div>
-      </div>
-      <div class="col-8">
-        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-          <h4 id="list-item-1">Item 1</h4>
-          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-          <h4 id="list-item-2">Item 2</h4>
-          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-          <h4 id="list-item-3">Item 3</h4>
-          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-          <h4 id="list-item-4">Item 4</h4>
-          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-        </div>
-      </div>
-    </div>
-    */
 
 export default Main;
